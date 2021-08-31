@@ -40,11 +40,11 @@
         <div class="form-group">
           <div class="outlined-input-field">
             <input
-            type="text"
-            id="cardnumber"
-            class="outlined-text-field"
-            autocomplete="off"
-            required
+              type="text"
+              id="cardnumber"
+              class="outlined-text-field"
+              autocomplete="off"
+              required
             />
             <label for="cardnumber">Card Number</label>
             <i></i>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="form-group">
-          <div class="inline-form-group">
+          <div class="inline-form-group inline-form-group-non-equal">
             <div class="outlined-input-field">
               <input
                 type="text"
@@ -79,6 +79,63 @@
             </div>
           </div>
         </div>
+
+        <div class="form-group">
+          <div class="inline-form-group">
+            <div class="outlined-input-field">
+              <input
+                type="text"
+                id="billingAddress"
+                class="outlined-text-field"
+                autocomplete="off"
+                required
+              />
+              <label for="billingAddress">Billing address</label>
+              <div class="helper-text"></div>
+            </div>
+
+            <div class="outlined-input-field">
+              <input
+                type="text"
+                id="billingCountry"
+                class="outlined-text-field"
+                autocomplete="off"
+                required
+              />
+              <label for="billingCountry">Billing country</label>
+              <div class="helper-text"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="inline-form-group">
+            <div class="outlined-input-field">
+              <input
+                type="text"
+                id="billingState"
+                class="outlined-text-field"
+                autocomplete="off"
+                required
+              />
+              <label for="billingState">Billing State</label>
+              <div class="helper-text"></div>
+            </div>
+
+            <div class="outlined-input-field">
+              <input
+                type="text"
+                id="billingZip"
+                class="outlined-text-field"
+                autocomplete="off"
+                required
+              />
+              <label for="billingZip">Billing Zip / Postal Code</label>
+              <div class="helper-text"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="form-group">
           <input class="button" type="submit" value="PAY" />
         </div>
