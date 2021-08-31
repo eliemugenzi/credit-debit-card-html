@@ -132,7 +132,12 @@ $grey: #757575;
         justify-content: space-between;
         margin-bottom: 2rem;
         width: 100%;
+        div:nth-of-type(1) {
+          margin-right: 1rem;
+        }
+      }
 
+      .inline-form-group-non-equal {
         div:nth-of-type(1) {
           margin-right: 1rem;
         }

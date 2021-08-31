@@ -8,7 +8,7 @@ const focusIn = (id, animate = 80) => {
       top: "-0.7rem",
       padding: "0.25rem",
     },
-    animate,
+    animate
   );
 };
 
@@ -19,7 +19,7 @@ const focusOut = (id) => {
       top: "0.8rem",
       padding: 0,
     },
-    80,
+    80
   );
 };
 
@@ -60,5 +60,41 @@ $("#securitycode").on("focusin", function () {
 });
 $("#securitycode").on("focusout", function () {
   if ($(this).val() === "") focusOut("#securitycode");
+  else $(this).next().css("color", primaryColor);
+});
+
+$("#billingAddress").on("focusin", function () {
+  if ($(this).val() === "") focusIn("#billingAddress");
+  else focusIn("#billingAddress", 0);
+});
+$("#billingAddress").on("focusout", function () {
+  if ($(this).val() === "") focusOut("#billingAddress");
+  else $(this).next().css("color", primaryColor);
+});
+
+$("#billingCountry").on("focusin", function () {
+  if ($(this).val() === "") focusIn("#billingCountry");
+  else focusIn("#billingCountry", 0);
+});
+$("#billingCountry").on("focusout", function () {
+  if ($(this).val() === "") focusOut("#billingCountry");
+  else $(this).next().css("color", primaryColor);
+});
+
+$("#billingState").on("focusin", function () {
+  if ($(this).val() === "") focusIn("#billingState");
+  else focusIn("#billingState", 0);
+});
+$("#billingState").on("focusout", function () {
+  if ($(this).val() === "") focusOut("#billingState");
+  else $(this).next().css("color", primaryColor);
+});
+
+$("#billingZip").on("focusin", function () {
+  if ($(this).val() === "") focusIn("#billingZip");
+  else focusIn("#billingZip", 0);
+});
+$("#billingZip").on("focusout", function () {
+  if ($(this).val() === "") focusOut("#billingZip");
   else $(this).next().css("color", primaryColor);
 });
